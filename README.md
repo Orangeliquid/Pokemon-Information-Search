@@ -33,7 +33,7 @@ This Python script utilizes the openpyxl library to load data from an Excel work
 
 ## Structure
 - `pokemon_data_fetcher.py`: The main script containing the Pokemon data fetching functionality.
-- `excel_wb/National_Pokedex_Gen_9.xlsx`: Example Excel workbook with Pokemon data.
+- `excel_wb/National_Pokedex_Gen_9.xlsx`: Excel workbook with Pokemon data.
 
 ## Contributing
 Feel free to contribute to the project by opening issues or pull requests.
