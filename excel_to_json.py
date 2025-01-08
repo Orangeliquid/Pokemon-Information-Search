@@ -1,4 +1,5 @@
 import pandas as pd
+import json
 
 
 def excel_to_json(file_path, output_path=None):
@@ -11,15 +12,14 @@ def excel_to_json(file_path, output_path=None):
     # Save to file if output_path is provided
     if output_path:
         with open(output_path, 'w') as json_file:
-            import json
             json.dump(excel_json, json_file, indent=4)
         print(f"JSON saved to {output_path}")
 
     return excel_json
 
 
-# Usage example
-file_path = "excel_wb/National_Pokedex_Gen_9.xlsx"
-output_path = "excel_wb/National_Pokedex_Gen_9.json"
+if __name__ == '__main__':
+    file_path = "excel_wb/National_Pokedex_Gen_9.xlsx"
+    output_path = "excel_wb/National_Pokedex_Gen_9.json"
 
-json_data = excel_to_json(file_path, output_path)
+    json_data = excel_to_json(file_path, output_path)
