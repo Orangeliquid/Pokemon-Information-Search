@@ -4,3 +4,4 @@
 !requirements.txt
 !LICENSE.txt
 .idea/
+__pycache__/
